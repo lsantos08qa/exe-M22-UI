@@ -2,7 +2,7 @@
 
 class CheckoutClass {
     get #termsCheck() {
-      return cy.get("#terms");
+      return cy.get("#terms", { timeout: 10000 });
     }
   
     get #finalizarBtn() {
